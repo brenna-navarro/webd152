@@ -19,14 +19,15 @@ nav {
 nav a {
     text-decoration: none; /*txd*/
 }
-h1 {
-  margin-bottom: 0; /*mb0*/
-}
 h1, 
 h2, 
 h3, 
 footer {
     font-family: Georgia, "Times New Roman", serif;
+}
+h1 {
+  margin-bottom: 0; /*mb0*/
+  margin-top: 0; /*mt0*/
 }
 h2 {
   color: #1976d2; /*c#1976d2*/

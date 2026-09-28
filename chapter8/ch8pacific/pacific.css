@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box; 
+}
+html {
+  scroll-behavior: smooth; /*scb*/
+}
+body {
+  background-color: #90c7e3; /*bgc#fff*/
+  background-image: linear-gradient(to bottom, #fff, #90c7e3);
+  border: 1px solid #003;
+  box-shadow: 3px 3px 3px #333; /*bxsd*/
+  color: #555; /*c#fff*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /*ffa */
+}
+#wrapper {
+  
+  margin: auto; /*m:a 8*/
+  max-width: 75rem; /*maw 2048*/
+  width: 80%; /*w80%*/
+}
+header {
+  background-color: #000032; /*bgc#002171*/
+  background-image: url(images/sunset.jpg); /*bgi*/
+  background-position: right; /*bgdp*/
+  background-repeat: no-repeat; /*bgr*/
+  color: #fff; /*c#fff*/
+  height: auto; /*h60*/
+  padding: 1rem; /*pt15*/
+  text-align: center; /*tac*/
+}
+header a {
+  text-decoration: none; /*txd*/ 
+}
+header a:link, 
+header a:visited {
+  color: #fff; /*c#fff*/
+}
+header a:hover {
+  color: #90c7e3; /*c#90c7e3*/
+}
+nav {
+  font-size: 120%; /*fz120%*/
+  font-weight: bold; /*fwb*/
+  padding: 0;
+  text-align: center;
+}
+nav ul {
+  display: flex; /*Turns the list into a flexible layout container*/
+  flex-direction: column; /*stacks the list items vertically*/
+  align-items: stretch; /*each list item stretches to fill the width of the menu*/
+  margin: 0; /*removes default spacing outside the list*/
+  list-style-type: none; /*removes the default bullet points*/
+  margin: 0; /*removes default spacing outside the list*/
+  padding-left: 0; /*removes default left padding*/
+  flex-direction: column; /*stacks the list items vertically*/
+  max-width: 100%; /*makes sure the menu doesn't exceed the container of the list*/
+  box-sizing: border-box; /*includes padding and border inside the width of the list*/
+  flex-wrap: wrap; /*allows items to move to a new line if needed*/
+}
+
+nav li {
+  border-bottom: 1px solid #003; /*Adds a bottom border to each list item*/
+  padding: 0.5rem 0; /*Adds vertical padding to each list item*/
+  max-width: 100%; /*maw100%*/
+  box-sizing: border-box; /*Ensures padding and border are included in the element's total width and height*/
+}
+
+nav a {
+    text-decoration: none; /*txd*/
+}
+nav a:link {
+  color: #5c7fa3; /*c#5c7fa3*/
+}
+nav a:visited {
+  color: #344873; /*c#344873*/
+}
+nav a:hover {
+  color: #a52a2a; /*c#a52a2a*/
+}
+main {
+  background-color: #fff; /*bgc#fff*/
+  padding: 0.0625rem 1.25rem 1.25rem 1.075rem; /*p0.0625rem 1.25rem 1.25rem 1.075rem*/
+}
+
+  /*padding: 1rem; adds padding to sections*/
+
+h1, 
+h2, 
+h3, 
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+}
+h1 {
+  letter-spacing: 0.25em; /*lts.25em*/
+  margin-bottom: 0; /*mb0*/
+  margin-top: 0; /*mt0*/
+}
+h2 {
+  color: #1976d2; /*c#1976d2*/
+  text-shadow: 1px 1px #404040; /**ts: 1px 1px 1px #ccc*/
+}
+h3 {
+    color: #003; /*c#003*/
+}
+
+address {
+    font-style: normal; /*fsn*/
+}
+footer {
+    background-color: #fff; /*bgc#fff*/
+    font-size: 75%; /*fz75%*/
+    font-style: italic; /*fsi*/
+    padding: 2em;
+    text-align: center; /*txa*/
+    max-width: 100vw; /*maw100vw*/
+    overflow-wrap: break-word; /*owb*/
+    }
+.resort {
+  color: #1976d2; /*c#c1976d2*/
+  font-weight: bold; /*fwb*/ 
+}
+#homehero, #yurthero, #trailhero {
+  background-repeat: no-repeat; /*bgr*/
+  background-color: #fff; /*bgc*/
+  height: 18.75rem; /*h18.75rem*/
+}
+#homehero {
+  background-image: url(images/coast2.jpg); /*bgi: url(images/coast2.jpg)*/
+}
+#yurthero {
+  background-image: url(images/yurt.jpg); /*bgi: url(images/yurt.jpg)*/
+}
+#trailhero {
+  background-image: url(images/trail.jpg); /*bgi: url(images/trail.jpg)*/
+}
+.card-row {
+  display: flex; /*Enables flexbox layout*/
+  flex-direction: row; /*Aligns children in a column*/
+  gap: 1rem; /*Adds space between items*/
+  max-width: 100vw; /*Ensures card row never exceeds viewport width*/
+  box-sizing: border-box; /*Includes padding and border in the element's total width and height*/
+  overflow: auto; /*Adds scrollbars if content overflows*/
+}
+.card-row section {
+  max-width: 100%; /*Ensures each card doesn't exceed the width of the card row*/
+  box-sizing: border-box; /*Includes padding and border in the element's total width and height*/
+  overflow-wrap: break-word; /*Allows long words to break and wrap onto the next line*/
+}
+@media (min-width: 32.5rem) {
+  body {
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    margin: 0; /*remove wrapper padding*/
+  }
+  #wrapper {
+    width: 100%; /*Fill viewport width*/
+    max-width: 100%; /*Remove max width limit*/
+    margin: 0; /*Remove auto margin*/
+    padding: 0; /*Remove padding*/
+  }
+  header {
+    background-image: none; /*bgimg:none*/
+    padding:0; /*pt0*/
+  }
+  footer {
+    padding: 1rem; /*pt1rem*/
+  }
+}
+
+@media (min-width: 37.5rem) {
+  nav ul {
+    flex-direction: row; /*fdrow*/
+    justify-content: center; /*jcsb*/
+    align-items: center; /*aic*/
+  }
+  nav li {
+    border-bottom: none; /*bbnone*/
+    padding: 0 1rem; /*p0 1rem*/
+    max-width: none; /*mawnone*/
+  }
+  .card-row {
+    flex-direction: row; /*fdrow*/
+    gap: 2rem; /*gap2rem*/
+    max-width: 100vw; /*maw100vw*/
+  }
+  .card-row section {
+    flex: 1 1 0; 
+    max-width: 100%; /*maw100%*/
+  }
+}
+
+
+/* The styles below are for the media query are your default styles
+These rules apply to all devices and screen sizes unless they are later overridden by a media query. Think of them as your "base design" */

@@ -121,7 +121,7 @@ footer {
 }
 #homehero, #yurthero, #trailhero {
   background-repeat: no-repeat; /*bgr*/
-  background-color: #fff; /*bgc*/
+  background-size: cover; /*bgz: cover*/
   height: 18.75rem; /*h18.75rem*/
 }
 #homehero {

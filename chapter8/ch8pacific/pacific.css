@@ -143,7 +143,7 @@ footer {
   box-sizing: border-box; /*Includes padding and border in the element's total width and height*/
   overflow-wrap: break-word; /*Allows long words to break and wrap onto the next line*/
 }
-@media (min-width: 32.5rem) {
+@media (max-width: 32.5rem) {
   body {
     background-image: none;
     border: none;
